@@ -7,9 +7,9 @@
     "hash": "62AF5CCE80DBBF5CDF961EC9515549334A2112056D4168FCED75C892C24BAA95",
     "post_install": [
 		"$WshShell = New-Object -ComObject WScript.Shell",
-        "$Shortcut = $WshShell.CreateShortcut(\"$dir\\..\\..\\..\\shims\fakenet.lnk\")",
+        "$Shortcut = $WshShell.CreateShortcut(\"$dir\\..\\..\\..\\shims\\fakenet.lnk\")",
 		"$Shortcut.TargetPath = \"$dir\\fakenet.exe\"",
 		"$Shortcut.WorkingDirectory = $dir",
 		"$Shortcut.Save()"
-    ],
+    ]
 }
